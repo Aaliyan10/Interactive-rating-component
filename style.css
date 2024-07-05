@@ -1,0 +1,113 @@
+/* ### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%) */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    height: calc(100vh + 0.1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+main{
+    background-color: #354555;
+    padding: 30px;
+    width: 21rem;
+    border-radius: 30px;
+}
+.rating{
+    display: block;
+}
+.rating img{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+}
+main h1{
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+main p{
+    color: hsl(217, 12%, 63%);
+    font-weight: 500;
+    font-size: 15px;
+}
+main ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.4rem;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+main li{
+    padding: 10px 20px;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 18%);
+    cursor: pointer;
+}
+main li:hover{
+    color: hsl(213, 19%, 18%);
+    background-color: hsl(25, 97%, 53%);
+}
+.selected{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(213, 19%, 18%);
+}
+main button{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: hsl(216, 12%, 8%);
+    font-weight: bolder;
+    padding: 10px 0px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+main button:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+.thanks{
+    display: none;
+    text-align: center;
+}
+.thanks .top{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 10px 15px;
+    padding-bottom: 7px;
+    width: max-content;
+    border-radius: 20px;
+    margin: auto;
+    margin: 10px auto;
+}
+@media(max-width:700px){
+    main{
+        width: 19rem;
+        border-radius: 15px;
+    }    
+    main ul{
+        gap: 1rem;
+    }
+}
